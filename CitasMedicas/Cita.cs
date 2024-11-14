@@ -14,7 +14,7 @@ namespace CitasMedicas
         public double precio { get; set; }
         public override string ToString()
         {
-            return base.ToString();
+            return $"{estudiantes.ToString()} \nNumero: {Numero} \nEnfermedad: {Enfermedad} \nPrecio: {precio}";
         }
     }
 }
