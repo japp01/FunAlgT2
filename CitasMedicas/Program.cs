@@ -11,16 +11,16 @@ do
         case 1:
             Array.Resize(ref lista, lista.Length + 1);
             lista[lista.Length - 1] = new Cita();
-            lista[lista.Length- 1] = Crear();
+            lista[lista.Length- 1] = CitaUtil.Crear();
             Console.WriteLine("\n¡Cita añadida!");
             Console.WriteLine("Presiona cualquier tecla para volver al menu...");
             break;
         case 2:
-            Listar(lista);
+            CitaUtil.Listar(lista);
             Console.WriteLine("\nPresiona cualquier tecla para volver al menu...");
             break;
         case 3:
-            ModMasivo(ref lista);
+            CitaUtil.ModMasivo(ref lista);
             Console.WriteLine("\nDatos modificados.");
             Console.WriteLine("Presiona cualquier tecla para volver al menu...");
             break;

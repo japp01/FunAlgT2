@@ -9,12 +9,12 @@ namespace CitasMedicas
     internal class Cita
     {
         public int Numero {  get; set; }
-        public Estudiante estudiantes { get; set; }
+        public Estudiante Persona { get; set; }
         public string Enfermedad {  get; set; }
         public double precio { get; set; }
         public override string ToString()
         {
-            return $"{estudiantes.ToString()} \nNumero: {Numero} \nEnfermedad: {Enfermedad} \nPrecio: {precio}";
+            return $"{Persona.ToString()}\nNumero: {Numero}\nEnfermedad: {Enfermedad}\nPrecio: {precio}\n\n";
         }
     }
 }
